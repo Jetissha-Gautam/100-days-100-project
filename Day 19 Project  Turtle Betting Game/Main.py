@@ -56,21 +56,24 @@ while ON:
             win=t.pencolor()
             
             if win==bet:
+
                 t.goto(0,0)
                 t.write(
                     "YOU WON !!! ",
                     align="center",
-                    font=("New Times Roman", 20, "normal")
+                    font=("monospace", 20, "normal")
                 )
-              
+                
+                
             else:
+
                 t.goto(0,0)
                 t.write(
                     "YOU LOSE !!! ",
                     align="center",
-                    font=("New Times Roman", 20, "normal")
+                    font=("monospace", 20, "normal")
                 )
-            
+                
             ON=False
             break
 
