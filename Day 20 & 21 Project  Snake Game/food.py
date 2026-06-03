@@ -4,6 +4,7 @@ import random
 class Food(Turtle):
 
     def __init__(self):
+        
         super().__init__()
         self.shape("circle")
         self.penup()
@@ -13,5 +14,6 @@ class Food(Turtle):
         self.goto(random.randint(-280,280),random.randint(-280,280))
     
     def new_food(self):
+
         self.color(random.random(),random.random(),random.random())
-        self.goto(random.randint(-280,280),random.randint(-280,280))
+        self.goto(random.randint(-240,240),random.randint(-240,240))

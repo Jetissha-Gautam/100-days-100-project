@@ -34,6 +34,7 @@ while ON:
         scoreboard.game_over()
 
     if snake.body[0].distance(food)<25:
+        
         snake.add_body(food.color()[0])     
         food.new_food() 
         scoreboard.increase() 
